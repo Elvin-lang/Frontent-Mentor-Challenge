@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&family=Raleway:wght@400;700&family=Sen&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    margin: 30px 40px 30px 40px;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-content {
+    margin-left: 12%;
+}
+
+.logo {
+    margin-bottom: 15%;
+    width: 200px;
+}
+
+
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-left: 7%;
+}
+
+.right-content {
+    align-items: center;
+}
+
+.right-content, h1{
+    padding-right: 150px;
+}
+
+.right-content, p{
+    padding-right: 100px;
+}
+
+h1 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.buttons button{
+    background-color: #fff;
+    border: none;
+    padding: 15px 60px 15px 60px;    
+    border-radius: 2.5rem;
+}
+
+.right-btn {
+    display: flex;
+}
+
+.right-btn .icons {
+    padding-top: 120px;
+    margin-right: 100px;
+}
+
+
+.icons a {
+    color: #fff;
+    font-size: 2rem;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .left-content  {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    
+    .container {
+        flex-direction: column;  
+    }
+
+    .left-container {
+        margin-left: -50px;
+    }
+
+    .left-content .big-image {
+        width: 100%;
+    }
+
+    .right-content, h1{
+        padding-left: 150px;
+        text-align: center;
+    }
+    
+    .right-content, p{
+        text-align: center;
+        padding-left: 100px;
+    }
+
+    .buttons  {
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        position: absolute;
+        left: 32%;
+        top: 105%;
+    }
+
+    .right-btn .icons {
+        position: absolute;
+        top: 100%;
+        left: 38%;
+    }
+}
+

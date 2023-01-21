@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Red Hat Display;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #e0e8ff;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img{
+    width: 100%;
+    background-size: contain;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.box-container {
+    height: 500px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+h3 {
+    padding-bottom: 15px;
+}
+
+small {
+    color: #7f8195;
+    padding: 0px 10px 0px 10px;
+}
+
+.price {
+    background-color: #e7edff5f;
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.price img {
+    width: 35px;
+    height: 35px;
+    margin: 10px 10px 0px 0px;
+}
+
+.price h5 {
+    margin: 10px 0 0 0;
+}
+
+.price 
+.change {
+    margin: 15px 0 0 50px;
+   text-align: center;
+}
+
+.buttons {
+    margin-top: 20px;
+    
+}
+.buttons .proceed {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #1e1fcd;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buttons .cancel {
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: #7f8195;
+    cursor: pointer;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+        
+        background-color: #e0e8ff;
+    }
+    .box-container {
+        max-height: 80%;
+    }
+} 

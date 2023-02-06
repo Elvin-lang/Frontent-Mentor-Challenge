@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+h1 {
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0px;
+    height: auto;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-wrapper {
+    text-align: center;
+}
+
+.text-wrapper p {
+    margin-top: 20px;
+    width: 500px;
+}
+
+
+
+.box {
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 5px;
+    position: relative;
+    margin: 20px;
+    overflow: hidden;   
+    line-height: 1.7;
+}
+
+
+.title {
+    padding: 30px;
+}
+
+.img-icon {
+    position: absolute;
+    margin: 20px 20px 20px;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* BREAK POINTS */
+
+@media only screen and (max-width: 375px) {
+    .text-wrapper p{
+        width: auto;
+        margin: auto 20px;
+    }
+
+    .box {
+        width: 300px;
+        height: 250px;
+      }
+
+    section {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 376px) {
+    .text-wrapper p{
+        width: auto;
+        margin: auto 20px;
+    }
+
+    .box {
+        max-width: 470px;
+        width: auto;
+        height: 300px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 470px) {
+    .text-wrapper p{
+        width: auto;
+        margin: auto 20px;
+    }
+
+    .box {
+        max-width: 470px;
+        width: auto;
+        height: 300px;
+    }
+
+    .supervisor,
+    .calculator {
+        max-width: 570px;
+        width: auto;
+        height: 250px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 560px) {
+    .text-wrapper p{
+        width: auto;
+        margin: auto 20px;
+    }
+
+    .box {
+        max-width: 630px;
+        width: auto;
+        height: 300px;
+    }
+
+    .supervisor,
+    .calculator {
+        max-width: 630px;
+        width: auto;
+        height: 250px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .text-wrapper p{
+        width: auto;
+        margin: auto 20px;
+    }
+
+    .box {
+        max-width: 640px;
+        width: auto;
+        height: 300px;
+    }
+
+    .supervisor,
+    .calculator {
+        max-width: 640px;
+        width: auto;
+        height: 250px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .text-wrapper p{
+        margin: auto 20px;
+    }
+}
